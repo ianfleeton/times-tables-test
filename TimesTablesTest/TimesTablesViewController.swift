@@ -40,6 +40,7 @@ class TimesTablesViewController: UIViewController {
             explaining = false
 
             checkContinueButton.setTitle("check", for: .normal)
+            guess.text = ""
             if (current < 11) {
                 current += 1
                 setQuestion()
