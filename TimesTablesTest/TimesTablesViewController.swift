@@ -18,6 +18,30 @@ class TimesTablesViewController: UIViewController {
     var correct = 0
     var explaining = false
     
+    let wellDones = [
+        "correct! you're awesome",
+        "spot on!",
+        "well done smarty pants!",
+        "perfect!",
+        "yes!",
+        "good!",
+        "nice one!",
+        "yep",
+        "cool beans!",
+        "that's right!"
+    ]
+    
+    let ohNoes = [
+        "oh no!",
+        "oops!",
+        "eek!",
+        "nope,",
+        "no,",
+        "not right,",
+        "wrong,",
+        "try harder!"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,9 +85,9 @@ class TimesTablesViewController: UIViewController {
 
             if guessed == answer {
                 correct += 1
-                question.text = "correct! you're awesome"
+                question.text = wellDones[Int(arc4random_uniform(UInt32(wellDones.count)))]
             } else {
-                question.text = "oh no! the answer was: " + answer
+                question.text = ohNoes[Int(arc4random_uniform(UInt32(ohNoes.count)))] + " the answer was: " + answer
             }
         }
     }
