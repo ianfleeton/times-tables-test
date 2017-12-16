@@ -217,7 +217,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-SS-T3l">
-                                <rect key="frame" x="641" y="362" width="83" height="48"/>
+                                <rect key="frame" x="641" y="361.5" width="83" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Wba-NM-Bkq"/>
                                 </constraints>
@@ -238,6 +238,7 @@
                             <constraint firstItem="Pk6-ab-bDw" firstAttribute="centerX" secondItem="41P-IQ-x5G" secondAttribute="centerX" id="g6B-Tx-ISc"/>
                             <constraint firstItem="hzt-9z-OoI" firstAttribute="top" secondItem="n0d-Wh-UZQ" secondAttribute="top" constant="112" id="gdl-LP-jvY"/>
                             <constraint firstItem="Pk6-ab-bDw" firstAttribute="top" secondItem="hzt-9z-OoI" secondAttribute="bottom" constant="72" id="hTS-9m-w1K"/>
+                            <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RWq-SS-T3l" secondAttribute="trailing" constant="16" id="hiz-Qy-Alm"/>
                             <constraint firstItem="hzt-9z-OoI" firstAttribute="leading" secondItem="n0d-Wh-UZQ" secondAttribute="leading" constant="20" id="lhd-FI-2pH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n0d-Wh-UZQ"/>
@@ -246,11 +247,13 @@
                         <outlet property="checkContinueButton" destination="RWq-SS-T3l" id="BOm-ea-Q7C"/>
                         <outlet property="guess" destination="Pk6-ab-bDw" id="Nuq-QK-qOu"/>
                         <outlet property="question" destination="hzt-9z-OoI" id="jIr-bT-Vgo"/>
+                        <segue destination="tDc-Xk-9hH" kind="unwind" identifier="UnwindToHome" unwindAction="unwindToHome:" id="Fle-vS-0GK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xd-Nd-y1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tDc-Xk-9hH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="825" y="136"/>
+            <point key="canvasLocation" x="1260" y="135"/>
         </scene>
     </scenes>
     <resources>
