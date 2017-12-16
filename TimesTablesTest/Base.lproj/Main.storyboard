@@ -247,13 +247,65 @@
                         <outlet property="checkContinueButton" destination="RWq-SS-T3l" id="BOm-ea-Q7C"/>
                         <outlet property="guess" destination="Pk6-ab-bDw" id="Nuq-QK-qOu"/>
                         <outlet property="question" destination="hzt-9z-OoI" id="jIr-bT-Vgo"/>
-                        <segue destination="tDc-Xk-9hH" kind="unwind" identifier="UnwindToHome" unwindAction="unwindToHome:" id="Fle-vS-0GK"/>
+                        <segue destination="mJG-Ec-i9e" kind="show" identifier="Score" id="G6e-bS-W8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xd-Nd-y1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="tDc-Xk-9hH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="135"/>
+            <point key="canvasLocation" x="799" y="136"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="Cdg-ca-WxX">
+            <objects>
+                <viewController id="mJG-Ec-i9e" customClass="ScoreViewController" customModule="TimesTablesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTk-oQ-Zk2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got 12 right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXL-E7-EwD">
+                                <rect key="frame" x="20" y="148" width="984" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="7O6-7p-4Yf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kd-gc-851">
+                                <rect key="frame" x="0.0" y="340" width="1024" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="XfG-z3-LgW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="32"/>
+                                <state key="normal" title="start again">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkTapped:" destination="BnT-JZ-tA3" eventType="touchUpInside" id="MfI-Pj-bHk"/>
+                                    <action selector="startAgainTapped:" destination="mJG-Ec-i9e" eventType="touchUpInside" id="eMi-uo-Mvc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93585569689296666" blue="0.61707247432772649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EXL-E7-EwD" firstAttribute="leading" secondItem="pPn-lt-2v5" secondAttribute="leading" constant="20" id="2Yu-p8-0sT"/>
+                            <constraint firstItem="7Kd-gc-851" firstAttribute="leading" secondItem="pPn-lt-2v5" secondAttribute="leading" id="N1b-6O-w77"/>
+                            <constraint firstItem="pPn-lt-2v5" firstAttribute="trailing" secondItem="7Kd-gc-851" secondAttribute="trailing" id="m9V-cE-2a2"/>
+                            <constraint firstItem="7Kd-gc-851" firstAttribute="top" secondItem="EXL-E7-EwD" secondAttribute="bottom" constant="48" id="qlh-m5-TNU"/>
+                            <constraint firstItem="pPn-lt-2v5" firstAttribute="trailing" secondItem="EXL-E7-EwD" secondAttribute="trailing" constant="20" id="xBI-yE-SNy"/>
+                            <constraint firstItem="EXL-E7-EwD" firstAttribute="top" secondItem="pPn-lt-2v5" secondAttribute="top" constant="128" id="xxI-57-bVh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pPn-lt-2v5"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="EXL-E7-EwD" id="qec-jh-3Ja"/>
+                        <segue destination="YG1-Zn-DBM" kind="unwind" identifier="UnwindToHome" unwindAction="unwindToHome:" id="E0j-Fo-ely"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yO3-cJ-Sbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="YG1-Zn-DBM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1483.0078125" y="135.9375"/>
         </scene>
     </scenes>
     <resources>

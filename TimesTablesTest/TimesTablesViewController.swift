@@ -44,6 +44,8 @@ class TimesTablesViewController: UIViewController {
             if (current < 11) {
                 current += 1
                 setQuestion()
+            } else {
+                performSegue(withIdentifier: "Score", sender: self)
             }
         } else {
             explaining = true
@@ -51,7 +53,11 @@ class TimesTablesViewController: UIViewController {
             let answer = "\(number * questions[current])"
             let guessed = guess.text!
             
-            checkContinueButton.setTitle("continue", for: .normal)
+            if (current == 11) {
+                checkContinueButton.setTitle("finish", for: .normal)
+            } else {
+                checkContinueButton.setTitle("continue", for: .normal)
+            }
 
             if guessed == answer {
                 correct += 1
@@ -62,14 +68,14 @@ class TimesTablesViewController: UIViewController {
         }
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "Score") {
+            let vc = segue.destination as! ScoreViewController
+            vc.score = correct
+        }
     }
-    */
 
 }
