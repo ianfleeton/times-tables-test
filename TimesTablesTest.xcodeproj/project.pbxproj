@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30C4372A1FE5478B0054DFE6 /* TimesTablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C437291FE5478B0054DFE6 /* TimesTablesViewController.swift */; };
+		30C4372C1FE547DE0054DFE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C4372B1FE547DE0054DFE6 /* HomeViewController.swift */; };
 		30DBFC7C1FE53F8800BB1856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DBFC7B1FE53F8800BB1856 /* AppDelegate.swift */; };
 		30DBFC7E1FE53F8800BB1856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DBFC7D1FE53F8800BB1856 /* ViewController.swift */; };
 		30DBFC811FE53F8800BB1856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30DBFC7F1FE53F8800BB1856 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30C437291FE5478B0054DFE6 /* TimesTablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTablesViewController.swift; sourceTree = "<group>"; };
+		30C4372B1FE547DE0054DFE6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		30DBFC781FE53F8800BB1856 /* TimesTablesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesTablesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DBFC7B1FE53F8800BB1856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30DBFC7D1FE53F8800BB1856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +61,11 @@
 				30DBFC7B1FE53F8800BB1856 /* AppDelegate.swift */,
 				30DBFC7D1FE53F8800BB1856 /* ViewController.swift */,
 				30DBFC7F1FE53F8800BB1856 /* Main.storyboard */,
+				30C4372B1FE547DE0054DFE6 /* HomeViewController.swift */,
 				30DBFC821FE53F8800BB1856 /* Assets.xcassets */,
 				30DBFC841FE53F8800BB1856 /* LaunchScreen.storyboard */,
 				30DBFC871FE53F8800BB1856 /* Info.plist */,
+				30C437291FE5478B0054DFE6 /* TimesTablesViewController.swift */,
 			);
 			path = TimesTablesTest;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30DBFC7E1FE53F8800BB1856 /* ViewController.swift in Sources */,
+				30C4372A1FE5478B0054DFE6 /* TimesTablesViewController.swift in Sources */,
 				30DBFC7C1FE53F8800BB1856 /* AppDelegate.swift in Sources */,
+				30C4372C1FE547DE0054DFE6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ianfleeton.TimesTablesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ianfleeton.TimesTablesTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
