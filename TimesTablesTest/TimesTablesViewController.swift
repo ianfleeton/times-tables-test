@@ -71,11 +71,10 @@ class TimesTablesViewController: UIViewController {
             } else {
                 performSegue(withIdentifier: "Score", sender: self)
             }
-        } else {
+        } else if let guessed = guess.text, !guessed.isEmpty {
             explaining = true
 
             let answer = "\(number * questions[current])"
-            let guessed = guess.text!
             
             if (current == 11) {
                 checkContinueButton.setTitle("finish", for: .normal)
