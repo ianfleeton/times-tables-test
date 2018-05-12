@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ChalkboardSE.ttc">
-            <string>ChalkboardSE-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -213,10 +208,13 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="64"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BnT-JZ-tA3" id="xtR-n0-TSt"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-SS-T3l">
-                                <rect key="frame" x="641" y="306" width="83" height="48"/>
+                                <rect key="frame" x="641" y="305.5" width="83" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Wba-NM-Bkq"/>
                                 </constraints>
@@ -225,7 +223,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="checkTapped:" destination="BnT-JZ-tA3" eventType="touchUpInside" id="oiO-tj-Htb"/>
+                                    <action selector="checkAnswer" destination="BnT-JZ-tA3" eventType="touchUpInside" id="bKj-GH-HYZ"/>
                                 </connections>
                             </button>
                         </subviews>

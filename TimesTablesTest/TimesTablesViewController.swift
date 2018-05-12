@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimesTablesViewController: UIViewController {
+class TimesTablesViewController: UIViewController, UITextFieldDelegate {
     var number = 0
     @IBOutlet var question: UILabel!
     @IBOutlet var guess: UITextField!
@@ -58,8 +58,8 @@ class TimesTablesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func checkTapped(_ sender: Any) {
+
+    @IBAction func checkAnswer() {
         if (explaining) {
             explaining = false
 
@@ -90,7 +90,14 @@ class TimesTablesViewController: UIViewController {
             }
         }
     }
-    
+
+    // MARK - UITextFieldDelegate
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        checkAnswer()
+        return true
+    }
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
