@@ -226,9 +226,8 @@
                                     <action selector="checkAnswer" destination="BnT-JZ-tA3" eventType="touchUpInside" id="bKj-GH-HYZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwU-ha-H1e">
-                                <rect key="frame" x="20" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwU-ha-H1e">
+                                <rect key="frame" x="20" y="24" width="31" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Quit">
                                     <color key="titleColor" red="0.91124131944444442" green="0.2156862745" blue="0.37150448070833342" alpha="1" colorSpace="calibratedRGB"/>
@@ -240,6 +239,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.79156524416641771" green="0.92847452862537028" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BwU-ha-H1e" secondAttribute="trailing" constant="20" id="G1n-Xq-LSH"/>
                             <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" secondItem="hzt-9z-OoI" secondAttribute="trailing" constant="20" id="GB4-CQ-4dh"/>
                             <constraint firstItem="RWq-SS-T3l" firstAttribute="baseline" secondItem="Pk6-ab-bDw" secondAttribute="baseline" id="Osc-8a-XJQ"/>
                             <constraint firstItem="RWq-SS-T3l" firstAttribute="leading" secondItem="Pk6-ab-bDw" secondAttribute="trailing" constant="57" id="Uuy-o2-N5c"/>
@@ -248,6 +248,8 @@
                             <constraint firstItem="Pk6-ab-bDw" firstAttribute="top" secondItem="hzt-9z-OoI" secondAttribute="bottom" constant="32" id="hTS-9m-w1K"/>
                             <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RWq-SS-T3l" secondAttribute="trailing" constant="16" id="hiz-Qy-Alm"/>
                             <constraint firstItem="hzt-9z-OoI" firstAttribute="leading" secondItem="n0d-Wh-UZQ" secondAttribute="leading" constant="20" id="lhd-FI-2pH"/>
+                            <constraint firstItem="BwU-ha-H1e" firstAttribute="top" secondItem="n0d-Wh-UZQ" secondAttribute="top" constant="4" id="qXr-Vj-sdH"/>
+                            <constraint firstItem="BwU-ha-H1e" firstAttribute="leading" secondItem="n0d-Wh-UZQ" secondAttribute="leading" constant="20" id="sMc-lI-Xl3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n0d-Wh-UZQ"/>
                     </view>
