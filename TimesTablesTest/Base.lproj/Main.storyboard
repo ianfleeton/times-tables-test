@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,162 +13,165 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TimesTablesTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimesTables-Home" translatesAutoresizingMaskIntoConstraints="NO" id="wMf-fe-X9l">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="y2N-2N-xnc">
-                                <rect key="frame" x="64" y="544" width="896" height="96"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19O-ZR-QLQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="1">
-                                            <color key="titleColor" red="0.52311197916666663" green="0.12171766493055555" blue="0.79250759548611116" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pe6-aN-JAE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKT-xL-6gD">
-                                        <rect key="frame" x="72" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="2">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbo-eN-tMr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-M5-b0i">
-                                        <rect key="frame" x="144" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="3">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpP-Ak-Z0H"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-24-XBS">
-                                        <rect key="frame" x="216.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="4">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfc-rI-WdN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faI-vQ-DGP">
-                                        <rect key="frame" x="288.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="5">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UjP-ZV-Y33"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg2-Iz-aTw">
-                                        <rect key="frame" x="360.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="6">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLx-HK-X9y"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-Wo-NHb">
-                                        <rect key="frame" x="432.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="7">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GES-fl-ekM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ich-kh-ggr">
-                                        <rect key="frame" x="504.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="8">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOo-jF-TQN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-Zh-NAk">
-                                        <rect key="frame" x="576.5" y="0.0" width="30" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="9">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27j-ka-gbd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t7-ph-dJI">
-                                        <rect key="frame" x="649" y="0.0" width="55" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="10">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiR-yK-TTR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmh-zL-49W">
-                                        <rect key="frame" x="746" y="0.0" width="55" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="11">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yl0-4J-pGQ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCX-Px-cAr">
-                                        <rect key="frame" x="843" y="0.0" width="53" height="96"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                        <state key="normal" title="12">
-                                            <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjP-Y7-oT6"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="2mz-pQ-Z9E"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-45-cpz">
-                                <rect key="frame" x="20" y="0.0" width="984" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="9Ng-UN-hsf"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Times Table Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-WT-70W">
+                                <rect key="frame" x="37.5" y="35" width="300" height="91"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="64"/>
-                                <state key="normal" title="The Times Tables Test!">
-                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                                <color key="textColor" red="0.52156862749999999" green="0.1215686275" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rTE-G0-sYh">
+                                <rect key="frame" x="20" y="497" width="335" height="138"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="y2N-2N-xnc">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19O-ZR-QLQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="0.52311197916666663" green="0.12171766493055555" blue="0.79250759548611116" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pe6-aN-JAE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKT-xL-6gD">
+                                                <rect key="frame" x="61" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbo-eN-tMr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWR-M5-b0i">
+                                                <rect key="frame" x="122" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpP-Ak-Z0H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-24-XBS">
+                                                <rect key="frame" x="183" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tfc-rI-WdN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faI-vQ-DGP">
+                                                <rect key="frame" x="244" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UjP-ZV-Y33"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg2-Iz-aTw">
+                                                <rect key="frame" x="305" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLx-HK-X9y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Ty5-Ku-cuI">
+                                        <rect key="frame" x="0.0" y="69" width="335" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-Wo-NHb">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GES-fl-ekM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ich-kh-ggr">
+                                                <rect key="frame" x="59.5" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOo-jF-TQN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCw-Zh-NAk">
+                                                <rect key="frame" x="119" y="0.0" width="30" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27j-ka-gbd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t7-ph-dJI">
+                                                <rect key="frame" x="171" y="0.0" width="46" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="10">
+                                                    <color key="titleColor" red="0.52156862745098043" green="0.12156862745098039" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiR-yK-TTR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmh-zL-49W">
+                                                <rect key="frame" x="230.5" y="0.0" width="46" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="11">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yl0-4J-pGQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCX-Px-cAr">
+                                                <rect key="frame" x="291" y="0.0" width="44" height="69"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                <state key="normal" title="12">
+                                                    <color key="titleColor" red="0.52311197919999997" green="0.12171766489999999" blue="0.79250759550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numberTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjP-Y7-oT6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wMf-fe-X9l" secondAttribute="trailing" id="1mL-kE-KqH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rTE-G0-sYh" secondAttribute="bottom" constant="32" id="5Tz-D6-JXG"/>
                             <constraint firstItem="wMf-fe-X9l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Es9-Rh-hdM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y2N-2N-xnc" secondAttribute="trailing" constant="64" id="IGc-xT-Bl0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fjo-45-cpz" secondAttribute="trailing" constant="20" id="UxR-SS-Ngb"/>
-                            <constraint firstItem="fjo-45-cpz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W4d-wh-eyk"/>
+                            <constraint firstItem="Zzo-WT-70W" firstAttribute="centerX" secondItem="wMf-fe-X9l" secondAttribute="centerX" id="PqA-wM-8bi"/>
+                            <constraint firstItem="Zzo-WT-70W" firstAttribute="width" relation="lessThanOrEqual" secondItem="wMf-fe-X9l" secondAttribute="width" multiplier="0.8" id="VvZ-aj-f1N"/>
+                            <constraint firstItem="wMf-fe-X9l" firstAttribute="top" secondItem="Zzo-WT-70W" secondAttribute="bottom" constant="-126" id="W8s-PJ-Ekj"/>
                             <constraint firstAttribute="bottom" secondItem="wMf-fe-X9l" secondAttribute="bottom" id="bUO-ua-KcR"/>
-                            <constraint firstItem="fjo-45-cpz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cLE-rG-ldw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y2N-2N-xnc" secondAttribute="bottom" constant="128" id="cMH-9g-Sw9"/>
-                            <constraint firstItem="y2N-2N-xnc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="f5d-V5-8VT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rTE-G0-sYh" secondAttribute="trailing" constant="20" id="eaQ-dU-CKv"/>
+                            <constraint firstItem="rTE-G0-sYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gUL-Yo-Rt5"/>
                             <constraint firstItem="wMf-fe-X9l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zR2-bM-yyv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -179,18 +182,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.8671875" y="135.9375"/>
+            <point key="canvasLocation" x="138.40000000000001" y="135.38230884557723"/>
         </scene>
         <!--Times Tables View Controller-->
         <scene sceneID="zSS-6T-G1e">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BnT-JZ-tA3" customClass="TimesTablesViewController" customModule="TimesTablesTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="41P-IQ-x5G">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 x 12 =" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-9z-OoI">
-                                <rect key="frame" x="20" y="32" width="984" height="192"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 x 12 =" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-9z-OoI">
+                                <rect key="frame" x="20" y="32" width="335" height="192"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="192" id="d5M-uu-ska"/>
                                 </constraints>
@@ -199,7 +202,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-ab-bDw">
-                                <rect key="frame" x="440" y="256" width="144" height="80"/>
+                                <rect key="frame" x="115.5" y="256" width="144" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="6de-0I-Rkx"/>
                                     <constraint firstAttribute="height" constant="80" id="Kv9-G9-mnZ"/>
@@ -210,8 +213,18 @@
                                     <outlet property="delegate" destination="BnT-JZ-tA3" id="xtR-n0-TSt"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwU-ha-H1e">
+                                <rect key="frame" x="20" y="4" width="31" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="0.91124131944444442" green="0.2156862745" blue="0.37150448070833342" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qLB-KC-hDj" kind="unwind" unwindAction="unwindToHome:" id="s9L-iZ-Fg3"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-SS-T3l">
-                                <rect key="frame" x="641" y="285.5" width="83" height="48"/>
+                                <rect key="frame" x="146" y="387" width="83" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Wba-NM-Bkq"/>
                                 </constraints>
@@ -223,27 +236,16 @@
                                     <action selector="checkAnswer" destination="BnT-JZ-tA3" eventType="touchUpInside" id="bKj-GH-HYZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwU-ha-H1e">
-                                <rect key="frame" x="20" y="4" width="31" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Quit">
-                                    <color key="titleColor" red="0.91124131944444442" green="0.2156862745" blue="0.37150448070833342" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="qLB-KC-hDj" kind="unwind" unwindAction="unwindToHome:" id="s9L-iZ-Fg3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.79156524416641771" green="0.92847452862537028" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="RWq-SS-T3l" firstAttribute="top" secondItem="Pk6-ab-bDw" secondAttribute="bottom" constant="51" id="01B-2N-Taa"/>
                             <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BwU-ha-H1e" secondAttribute="trailing" constant="20" id="G1n-Xq-LSH"/>
                             <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" secondItem="hzt-9z-OoI" secondAttribute="trailing" constant="20" id="GB4-CQ-4dh"/>
-                            <constraint firstItem="RWq-SS-T3l" firstAttribute="baseline" secondItem="Pk6-ab-bDw" secondAttribute="baseline" id="Osc-8a-XJQ"/>
-                            <constraint firstItem="RWq-SS-T3l" firstAttribute="leading" secondItem="Pk6-ab-bDw" secondAttribute="trailing" constant="57" id="Uuy-o2-N5c"/>
+                            <constraint firstItem="RWq-SS-T3l" firstAttribute="centerX" secondItem="n0d-Wh-UZQ" secondAttribute="centerX" id="QTr-Z6-7hd"/>
                             <constraint firstItem="Pk6-ab-bDw" firstAttribute="centerX" secondItem="41P-IQ-x5G" secondAttribute="centerX" id="g6B-Tx-ISc"/>
                             <constraint firstItem="hzt-9z-OoI" firstAttribute="top" secondItem="n0d-Wh-UZQ" secondAttribute="top" constant="32" id="gdl-LP-jvY"/>
                             <constraint firstItem="Pk6-ab-bDw" firstAttribute="top" secondItem="hzt-9z-OoI" secondAttribute="bottom" constant="32" id="hTS-9m-w1K"/>
-                            <constraint firstItem="n0d-Wh-UZQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RWq-SS-T3l" secondAttribute="trailing" constant="16" id="hiz-Qy-Alm"/>
                             <constraint firstItem="hzt-9z-OoI" firstAttribute="leading" secondItem="n0d-Wh-UZQ" secondAttribute="leading" constant="20" id="lhd-FI-2pH"/>
                             <constraint firstItem="BwU-ha-H1e" firstAttribute="top" secondItem="n0d-Wh-UZQ" secondAttribute="top" constant="4" id="qXr-Vj-sdH"/>
                             <constraint firstItem="BwU-ha-H1e" firstAttribute="leading" secondItem="n0d-Wh-UZQ" secondAttribute="leading" constant="20" id="sMc-lI-Xl3"/>
@@ -268,11 +270,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="mJG-Ec-i9e" customClass="ScoreViewController" customModule="TimesTablesTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTk-oQ-Zk2">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got 12 right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXL-E7-EwD">
-                                <rect key="frame" x="20" y="128" width="984" height="144"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got 12 right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="EXL-E7-EwD">
+                                <rect key="frame" x="20" y="128" width="335" height="144"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="7O6-7p-4Yf"/>
                                 </constraints>
@@ -281,7 +283,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kd-gc-851">
-                                <rect key="frame" x="0.0" y="320" width="1024" height="48"/>
+                                <rect key="frame" x="0.0" y="320" width="375" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="XfG-z3-LgW"/>
                                 </constraints>
